@@ -3,13 +3,9 @@
 # Checks smartnode on Ubuntu 17.10 x64
 # ATTENTION: The anti-ddos part will disable http, https and dns ports.
 
-if [ "$(whoami)" == "root" ]; then
-  echo "Script must be run as user: smartadmin or ID you setup for smartcash"
-  exit -1
-fi
-
 # Warning that the script will reboot the server
 echo "WARNING: This script will reboot the server when it's finished."
+echo "Script must be run as user you installed smartcash with.  So if you did as root or smartadmin please switch to correct one."
 printf "Press Ctrl+C to cancel or Enter to continue: "
 read IGNORE
 
