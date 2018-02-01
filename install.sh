@@ -31,9 +31,27 @@ echo ""
 echo "Script must be run as user you installed smartcash."
 echo "The current user is: $id"
 echo "The user running smartcash is: $scid"
-echo "If these are different you should exit"
-printf "Press Ctrl+C to cancel or Enter to continue: "
-read IGNORE
+
+# smartcashd is not running we have bigger problems
+if [ $scid = "" ]
+then
+    echo "smartcashd is not running please start or install"
+    echo "Exiting"
+    exit
+fi
+
+# make sure they are the same user that installed smartcashd
+if [ $scid = $id ]
+then
+    echo "The current user $id is running smartcashd as $scid"
+    echo "We are good to continue"
+else
+    echo "The current user $id is different than $scid"
+    echo "$scid is currently running the smartcashd process"
+    echo "Please switch user to $scid"
+    echo "Exiting"
+    exit
+fi
 
 cd
 # Changing the SSH Port to a custom number is a good security measure against DDOS attacks
