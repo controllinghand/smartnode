@@ -25,7 +25,7 @@ id=$(whoami)
 echo "WARNING: This script will reboot the server when it's finished."
 echo ""
 echo "Script must be run as user you installed smartcash."
-echo "The current user is: $whoami"
+echo "The current user is: $id"
 echo "Is this the correct user?"
 printf "Press Ctrl+C to cancel or Enter to continue: "
 read IGNORE
