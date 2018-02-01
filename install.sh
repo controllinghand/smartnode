@@ -20,13 +20,18 @@ then
     read IGNORE
 fi
 
+# who is running this script?
 id=$(whoami)
+# who is running smartcashd
+scid=$(ps axo user:20,comm | grep smartcashd | awk '{printf $1}')
+
 # Warning that the script will reboot the server
 echo "WARNING: This script will reboot the server when it's finished."
 echo ""
 echo "Script must be run as user you installed smartcash."
 echo "The current user is: $id"
-echo "Is this the correct user?"
+echo "The user running smartcash is: $scid"
+echo "If these are different you should exit"
 printf "Press Ctrl+C to cancel or Enter to continue: "
 read IGNORE
 
