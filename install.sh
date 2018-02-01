@@ -24,7 +24,7 @@ fi
 echo "WARNING: This script will reboot the server when it's finished."
 echo "Script must be run as user you installed smartcash."
 echo "The current user is:" whoami
-echo "If this is the correct user hit Enter otherwise Press Ctrl+C"
+echo "Is this the correct user?"
 printf "Press Ctrl+C to cancel or Enter to continue: "
 read IGNORE
 
