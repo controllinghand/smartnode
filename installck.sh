@@ -1,5 +1,5 @@
 #!/bin/bash
-# install.sh
+# installck.sh
 # Checks smartnode on Ubuntu 17.10 x64
 # ATTENTION: The anti-ddos part will disable http, https and dns ports.
 # Controllinghand version 1.1 1/31/2018
