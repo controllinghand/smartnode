@@ -20,10 +20,12 @@ then
     read IGNORE
 fi
 
+id=$(whoami)
 # Warning that the script will reboot the server
 echo "WARNING: This script will reboot the server when it's finished."
+echo ""
 echo "Script must be run as user you installed smartcash."
-echo "The current user is:" whoami
+echo "The current user is: $whoami"
 echo "Is this the correct user?"
 printf "Press Ctrl+C to cancel or Enter to continue: "
 read IGNORE
