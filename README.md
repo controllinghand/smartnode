@@ -5,7 +5,7 @@
 ### This does not change the SSH port default
 
 ### This is from the great work of https://forum.smartcash.cc/u/msg768
-### This script Assumes you already have a Smartnode installed.  If you need to install a new Smartnode you may want to use the installer script provided by @msg786 https://github.com/SmartCash/smartnode or you can follow my guide at https://steemit.com/smartcash/@controllinghand/smartcash-smartnode-setup-guide-v1-4-mac-version-with-smartnode-checks-and-anti-ddos-optional-bootstrap
+### This script Assumes you already have a Smartnode installed.  If you need to install a new Smartnode you may want to use the installer script provided by @msg786 https://github.com/SmartCash/smartnode or you can follow my guide at https://forum.smartcash.cc/t/smartcash-smartnode-setup-guide-v2-1-mac-version-quick-setup/3022
 
 ### You must run this script as smartadmin or ID you used to run smartcashd some people installed as root and that's ok. At the end of the script you will be asked for a sudo password to run the anti-ddos script and reboot command
 
