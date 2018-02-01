@@ -22,7 +22,9 @@ fi
 
 # Warning that the script will reboot the server
 echo "WARNING: This script will reboot the server when it's finished."
-echo "Script must be run as user you installed smartcash with.  So if you did as root or smartadmin please switch to correct one."
+echo "Script must be run as user you installed smartcash."
+echo "The current user is:" whoami
+echo "If this is the correct user hit Enter otherwise Press Ctrl+C"
 printf "Press Ctrl+C to cancel or Enter to continue: "
 read IGNORE
 
