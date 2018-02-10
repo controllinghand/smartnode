@@ -55,9 +55,9 @@ fi
 
 cd
 # Changing the SSH Port to a custom number is a good security measure against DDOS attacks
-# printf "Custom SSH Port(Enter to ignore): "
-# read VARIABLE
-# _sshPortNumber=${VARIABLE:-22}
+printf "Custom SSH Port(Enter to ignore): "
+read VARIABLE
+_sshPortNumber=${VARIABLE:-22}
 
 # Create a directory for smartnode's cronjobs and the anti-ddos script
 rm -r smartnode
@@ -95,8 +95,8 @@ chmod 0700 ./upgrade.sh
 chmod 0700 ./clearlog.sh
 
 # Change the SSH port
-# sed -i "s/[#]\{0,1\}[ ]\{0,1\}Port [0-9]\{2,\}/Port ${_sshPortNumber}/g" /etc/ssh/sshd_config
-# sed -i "s/14855/${_sshPortNumber}/g" ~/smartnode/anti-ddos.sh
+sed -i "s/[#]\{0,1\}[ ]\{0,1\}Port [0-9]\{2,\}/Port ${_sshPortNumber}/g" /etc/ssh/sshd_config
+sed -i "s/14855/${_sshPortNumber}/g" ~/smartnode/anti-ddos.sh
 
 # Run the anti-ddos script You will need to put in your sudo password
 echo "Installing anti-ddos script requires sudo password or root."
