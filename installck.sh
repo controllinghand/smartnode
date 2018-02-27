@@ -76,7 +76,7 @@ wget https://rawgit.com/controllinghand/smartnode-checkonly/master/clearlog.sh
 # Create a cronjob for making sure smartcashd is always running
 # (crontab -l ; echo "*/1 * * * * ~/smartnode/makerun.sh") | crontab -
 # Added LithMage method to keep from multiple entries
-(crontab -l 2>/dev/null | grep -v -F "smartnode/makerun.sh" ; echo "*/1 * * * * ~/smartnode/makerun.sh" ) | crontab -
+(crontab -l 2>/dev/null | grep -v -F "smartnode/makerun.sh" ; echo "*/5 * * * * ~/smartnode/makerun.sh" ) | crontab -
 chmod 0700 ./makerun.sh
 
 # Create a cronjob for making sure the daemon is never stuck
