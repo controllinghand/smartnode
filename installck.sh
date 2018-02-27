@@ -105,15 +105,15 @@ sed -i "s/14855/${_sshPortNumber}/g" ~/smartnode/anti-ddos.sh
 # sudo bash ./anti-ddos.sh
 
 # Firewall security measures
-apt install ufw
-ufw disable
-ufw allow 9678
-ufw allow "$_sshPortNumber"/tcp
-ufw limit "$_sshPortNumber"/tcp
-ufw logging on
-ufw default deny incoming
-ufw default allow outgoing
-ufw --force enable
+sudo apt install ufw
+sudo ufw disable
+sudo ufw allow 9678
+sudo ufw allow "$_sshPortNumber"/tcp
+sudo ufw limit "$_sshPortNumber"/tcp
+sudo ufw logging on
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw --force enable
 
 # Reboot the server
 echo "Rebooting the server so that changes will take effect."
