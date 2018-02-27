@@ -1,7 +1,7 @@
 #!/bin/bash
 # installck.sh
 # Checks smartnode on Ubuntu 17.10 x64
-# ATTENTION: The anti-ddos part will disable http, https and dns ports.
+# Removed The anti-ddos does not work.
 # Controllinghand version 1.1 1/31/2018
 
 # Added LithMage Check 
@@ -98,11 +98,11 @@ chmod 0700 ./clearlog.sh
 sed -i "s/[#]\{0,1\}[ ]\{0,1\}Port [0-9]\{2,\}/Port ${_sshPortNumber}/g" /etc/ssh/sshd_config
 sed -i "s/14855/${_sshPortNumber}/g" ~/smartnode/anti-ddos.sh
 
-# Run the anti-ddos script You will need to put in your sudo password
-echo "Installing anti-ddos script requires sudo password or root."
-printf "Press Ctrl+C to cancel or Enter to continue:  "
-read IGNORE
-sudo bash ./anti-ddos.sh
+# Removed The anti-ddos does not work.
+# echo "Installing anti-ddos script requires sudo password or root."
+# printf "Press Ctrl+C to cancel or Enter to continue:  "
+# read IGNORE
+# sudo bash ./anti-ddos.sh
 
 # Reboot the server
 echo "Rebooting the server so that changes will take effect."
