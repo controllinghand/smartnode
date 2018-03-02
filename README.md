@@ -20,6 +20,6 @@
 wget https://rawgit.com/controllinghand/smartnode-checkonly/master/installck.sh
 bash ./installck.sh
 ```
-#### At the end of the install your server will reboot so that the anti-ddos and cron jobs will take effect
+#### At the end of the install your server will reboot 
 
 ### Donation to my Smartcash please: SebFkuHrqDnj3obXvMtfxtQKRgFeVpXF5x
