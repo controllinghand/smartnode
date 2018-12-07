@@ -17,7 +17,7 @@
 
 #### Login to your vps as smartadmin or ID you used to run smartcashd, donwload the installck.sh file and then run it:
 ```
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/installck.sh
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/installck.sh
 bash ./installck.sh
 ```
 #### At the end of the install your server will reboot 

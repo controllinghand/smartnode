@@ -1,4 +1,4 @@
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/patches/patch-0.2.sh 
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/patches/patch-0.2.sh 
 bash patch-0.2.sh 
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/patches/patch-0.3.sh 
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/patches/patch-0.3.sh 
 sudo bash patch-0.3.sh 
