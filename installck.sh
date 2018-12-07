@@ -68,10 +68,10 @@ cd ~/smartnode/
 
 # Download the appropriate scripts
 # wget https://rawgit.com/controllinghand/smartnode-checkonly/master/anti-ddos.sh
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/makerun.sh
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/checkdaemon.sh
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/upgrade.sh
-wget https://rawgit.com/controllinghand/smartnode-checkonly/master/clearlog.sh
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/makerun.sh
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/checkdaemon.sh
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/upgrade.sh
+wget https://cdn.jsdelivr.net/gh/controllinghand/smartnode-checkonly/clearlog.sh
 
 # Create a cronjob for making sure smartcashd is always running
 # (crontab -l ; echo "*/1 * * * * ~/smartnode/makerun.sh") | crontab -
